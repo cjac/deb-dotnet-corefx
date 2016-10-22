@@ -1,0 +1,7 @@
+dotnet-corefx (1.0.0) UNRELEASED; urgency=medium
+
+  * Initial release. (Closes: #779970)
+  - create debian/watch
+  - create debian/changelog
+
+ -- C.J. Collier <cjcollier@linuxfoundation.org>  Fri, 21 Oct 2016 12:34:50 -0700

@@ -1,0 +1,17 @@
+version=4
+opts=\
+uversionmangle=\
+s{((?:\d+\.)*\d+)-(.+)}{$1~$2},\
+filenamemangle=\
+s{^.+/v((?:\d+\.)*\d+)}{dotnet-corefx-$1};\
+s{(\d)-(.+)}{$1~$2},\
+dirversionmangle=\
+s{alpha-}{0-}i;\
+s{beta-}{1-}i;\
+s{(pre|preview)-}{2-}i;\
+s{rc-}{3-}i\
+downloadurlmangle=\
+s{^/}{https://github.com/} \
+https://github.com/dotnet/corefx/releases \
+.+/v(\d.*)\.tar\.gz
+
